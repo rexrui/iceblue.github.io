@@ -1,0 +1,7 @@
+---
+title: README
+author: IceBlue
+---
+> Creation: 2017-03-22 11:33:02
+1.屏蔽Hexo标签与Next主题标签
+路径:layout/_partials/footer.swig
