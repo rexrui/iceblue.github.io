@@ -7,6 +7,7 @@ author: IceBlue
 1.Blog配置
 图片/视频存储: 七牛
 
+
 > Creation: 2017-03-22 11:33:02
 2.屏蔽Hexo标签与Next主题标签
 路径:layout/_partials/footer.swig
