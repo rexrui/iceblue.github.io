@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>IceBlue</title>
+  <subtitle>Poems and songs faraway</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="www.iceblue.top/"/>
+  <updated>2017-03-22T05:38:19.000Z</updated>
+  <id>www.iceblue.top/</id>
+  
+  <author>
+    <name>icelbue</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Go all the way</title>
+    <link href="www.iceblue.top/2017/03/20/Go-all-the-way/"/>
+    <id>www.iceblue.top/2017/03/20/Go-all-the-way/</id>
+    <published>2017-03-20T10:27:02.000Z</published>
+    <updated>2017-03-22T05:38:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<video src="http://o8uvvhqzu.bkt.clouddn.com/3443360991.mp4" height="100%" width="100%" loop="loop" autoplay="autoplay" controls="controls"><br>您的浏览器不支持 video 标签。<br></video>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;video src=&quot;http://o8uvvhqzu.bkt.clouddn.com/3443360991.mp4&quot; height=&quot;100%&quot; width=&quot;100%&quot; loop=&quot;loop&quot; autoplay=&quot;autoplay&quot; controls=&quot;controls&quot;&gt;
+    
+    </summary>
+    
+      <category term="feeling" scheme="www.iceblue.top/categories/feeling/"/>
+    
+    
+      <category term="stimulate" scheme="www.iceblue.top/tags/stimulate/"/>
+    
+  </entry>
+  
+</feed>
