@@ -330,6 +330,499 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="www.iceblue.top/2017/03/24/Oracle中的数组/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="icelbue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/my.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IceBlue">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/24/Oracle中的数组/" itemprop="url">
+                  Oracle中的数组
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-24T18:27:02+08:00">
+                2017-03-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech-OracleDB/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech-OracleDB</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/24/Oracle中的数组/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/24/Oracle中的数组/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>DECLARE<br>    l_clob CLOB;<br>    – 数组<br>    TYPE type_array IS VARRAY(2000) OF VARCHAR2(4000);<br>    var_array type_array := type_array(‘hmdm_ext_10212’<br>                                      ,’hmdm_attr_ext_10340’<br>                                      ,’hmdm_attr_ext_10298’<br>                                      ,’hmdm_attr_ext_10212’<br>                                      ,’hmdm_attr_tab_10570’<br>                                      ,’hmdm_attr_tab_10586’<br>                                      ,’hmdm_attr_tab_10409’<br>                                      ,’hmdm_attr_tab_10581’<br>                                      ,’hmdm_attr_tab_10587’<br>                                      ,’hmdm_attr_tab_10589’<br>                                      ,’hmdm_attr_tab_10437’<br>                                      ,’hmdm_attr_tab_10502’<br>                                      ,’hmdm_apply_attr_tab_10570’<br>                                      ,’hmdm_apply_attr_tab_10586’<br>                                      ,’hmdm_apply_attr_tab_10409’<br>                                      ,’hmdm_apply_attr_tab_10581’<br>                                      ,’hmdm_apply_attr_tab_10587’<br>                                      ,’hmdm_apply_attr_tab_10589’<br>                                      ,’hmdm_apply_attr_tab_10437’<br>                                      ,’hmdm_apply_attr_tab_10502’);<br>BEGIN<br>    FOR i IN 1 .. var_array.count LOOP<br>        – 获取表创建语句<br>        SELECT dbms_metadata.get_ddl(‘TABLE’<br>                                    ,upper(var_array(i)))<br>        INTO   l_clob<br>        FROM   dual;<br>        dbms_output.put_line(l_clob || ‘;’);<br>    END LOOP;</p>
+<p>END;</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="www.iceblue.top/2017/03/24/YunbaPublish/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="icelbue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/my.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IceBlue">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/24/YunbaPublish/" itemprop="url">
+                  JS Publish
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-24T18:27:02+08:00">
+                2017-03-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech-JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech-JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/24/YunbaPublish/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/24/YunbaPublish/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <link rel="stylesheet" href="/css/jobhub.css">
+<script type="text/javascript" src="/lib/yunba/socket.io-1.3.5.min.js"></script>
+<script type="text/javascript" src="/lib/yunba/yunba-js-sdk.js"></script>
+<script type="text/javascript" src="/lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="/lib/yunba/jobhub.js"></script>
+<div class="zh">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="inputCmd" class="col-sm-2 control-label">命令</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputCmd" placeholder="命令">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputTopic" class="col-sm-2 control-label">密码</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputTopic" placeholder="密码">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input type="button" id="btnSubmit" class="btn btn-default" value="执行">
+                <span id="spanInfo" class="error-info"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="div_msg" class="col-sm-2 control-label"></label>
+            <div class="col-sm-10">
+                <div class="well" id="div_msg">
+                    <p># 执行结果</p>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="www.iceblue.top/2017/03/24/YunbaSubscribe/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="icelbue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/my.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IceBlue">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/24/YunbaSubscribe/" itemprop="url">
+                  JS Subscribe
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-24T18:27:02+08:00">
+                2017-03-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech-JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech-JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/24/YunbaSubscribe/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/24/YunbaSubscribe/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="www.iceblue.top/2017/03/20/Go-all-the-way/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -441,11 +934,11 @@
           
             <video src="http://o8uvvhqzu.bkt.clouddn.com/3443360991.mp4" height="100%" width="100%" loop="loop" autoplay="autoplay" controls="controls"><br>您的浏览器不支持 video 标签。<br></video>
 
-<p>Your life is your life .<br>Don’t let it be close down the thinge so machine.<br>Be on the watch.<br>Their are way is out.<br>There’s reals a light somewhere.<br>It may not be much light.<br>But,it be see out the night.<br>Be on the watch.<br>The god will left you chance.<br>Know them,clear them.<br>You can be death,but you can’t be death live,sometime.<br>And more of you learn to do it,the more light their will be.</p>
-<p>Your life is your life .<br>Know it when you have it.<br>You are marvelous.<br>The god wait to do lifes and you.</p>
-<p>If you going to try,<br>Go on the way.<br>Otherwise,don’t even start.<br>If you going to try,<br>Go all the way.<br>It’s could be losing girl friend,wife,projects,jobs.<br>And may be your mind.<br>Go all the way.<br>It could mean not eating a three or four days.<br>It could mean freezing on a park bench.<br>It could mean cell.<br>It could mean derision,..,isolation.<br>Isolation is gift,for the others to retest your endurance,of how mach you really want do it,and you do it.<br>Despite rejection,and ….<br>And they will be better but anything else you can imagine.</p>
-<p>If you going to try.<br>Go all the way.<br>there’s no other feeling like that.<br>You will be alone with gods.<br>And the night will clear with the fire.<br>Do it,do it,do it,do it.<br>Go on the way.<br>Go on the way.</p>
-<p>Your will life stream perfect laugh.<br>It’s only good truncheon there is.</p>
+<p>Your life is your life .<br>Don’t let it be close down the thing so machine.<br>Be on the watch.<br>Their are way’s out.<br>There’s reals a light somewhere.<br>It may not be much light.<br>But, it be see out the nights.<br>Be on the watch.<br>The god will left you chances.<br>Know them, clear them.<br>You can be death, but you can’t be death-in-life, sometime.<br>And more of you learn to do it, the more light their will be.</p>
+<p>Your life is your life .<br>Know it when you have it.<br>You are marvelous.<br>The god wait to do lives and you.</p>
+<p>If you going to try,<br>Go on the way.<br>Otherwise, don’t even start.<br>If you going to try,<br>Go all the way.<br>It’s could be losing girl friend, wives, projects, jobs, and may be your mind.<br>Go all the way.<br>It could mean not eating a three or four days.<br>It could mean freezing on a park bench.<br>It could mean cell.<br>It could mean derision, mockery, isolation.<br>Isolation is gift, for the others to retest your endurance, of how mach you really want do it, and you do it.<br>Despite rejection, and work hards.<br>And they will be better but anything else you can imagine.</p>
+<p>If you going to try.<br>Go all the way.<br>There is no other feeling like that.<br>You will be alone with gods.<br>And the night who clear with the fire.<br>Do it, do it, do it, do it.<br>Go on the way.<br>Go on the way.</p>
+<p>Your will life stream perfect laughter.<br>It’s only good truncheon there is.</p>
 
           
         
@@ -525,7 +1018,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -536,7 +1029,7 @@
             
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -547,7 +1040,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
