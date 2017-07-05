@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.iceblue.top/"/>
-  <updated>2017-03-25T17:10:56.000Z</updated>
+  <updated>2017-07-05T05:26:11.000Z</updated>
   <id>www.iceblue.top/</id>
   
   <author>
@@ -14,107 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Oracle中的数组</title>
-    <link href="www.iceblue.top/2017/03/24/Oracle%E4%B8%AD%E7%9A%84%E6%95%B0%E7%BB%84/"/>
-    <id>www.iceblue.top/2017/03/24/Oracle中的数组/</id>
-    <published>2017-03-24T10:27:02.000Z</published>
-    <updated>2017-03-25T17:10:56.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>DECLARE<br>    l_clob CLOB;<br>    – 数组<br>    TYPE type_array IS VARRAY(2000) OF VARCHAR2(4000);<br>    var_array type_array := type_array(‘hmdm_ext_10212’<br>                                      ,’hmdm_attr_ext_10340’<br>                                      ,’hmdm_attr_ext_10298’<br>                                      ,’hmdm_attr_ext_10212’<br>                                      ,’hmdm_attr_tab_10570’<br>                                      ,’hmdm_attr_tab_10586’<br>                                      ,’hmdm_attr_tab_10409’<br>                                      ,’hmdm_attr_tab_10581’<br>                                      ,’hmdm_attr_tab_10587’<br>                                      ,’hmdm_attr_tab_10589’<br>                                      ,’hmdm_attr_tab_10437’<br>                                      ,’hmdm_attr_tab_10502’<br>                                      ,’hmdm_apply_attr_tab_10570’<br>                                      ,’hmdm_apply_attr_tab_10586’<br>                                      ,’hmdm_apply_attr_tab_10409’<br>                                      ,’hmdm_apply_attr_tab_10581’<br>                                      ,’hmdm_apply_attr_tab_10587’<br>                                      ,’hmdm_apply_attr_tab_10589’<br>                                      ,’hmdm_apply_attr_tab_10437’<br>                                      ,’hmdm_apply_attr_tab_10502’);<br>BEGIN<br>    FOR i IN 1 .. var_array.count LOOP<br>        – 获取表创建语句<br>        SELECT dbms_metadata.get_ddl(‘TABLE’<br>                                    ,upper(var_array(i)))<br>        INTO   l_clob<br>        FROM   dual;<br>        dbms_output.put_line(l_clob || ‘;’);<br>    END LOOP;</p>
-<p>END;</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;DECLARE&lt;br&gt;    l_clob CLOB;&lt;br&gt;    – 数组&lt;br&gt;    TYPE type_array IS VARRAY(2000) OF VARCHAR2(4000);&lt;br&gt;    var_array type_array := type_arr
-    
-    </summary>
-    
-      <category term="Tech-OracleDB" scheme="www.iceblue.top/categories/Tech-OracleDB/"/>
-    
-    
-      <category term="RDB" scheme="www.iceblue.top/tags/RDB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS Publish</title>
-    <link href="www.iceblue.top/2017/03/24/YunbaPublish/"/>
-    <id>www.iceblue.top/2017/03/24/YunbaPublish/</id>
-    <published>2017-03-24T10:27:02.000Z</published>
-    <updated>2017-03-25T17:56:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" href="/css/jobhub.css">
-<script type="text/javascript" src="/lib/yunba/socket.io-1.3.5.min.js"></script>
-<script type="text/javascript" src="/lib/yunba/yunba-js-sdk.js"></script>
-<script type="text/javascript" src="/lib/jquery/jquery.js"></script>
-<script type="text/javascript" src="/lib/yunba/jobhub.js"></script>
-<div class="zh">
-    <form class="form-horizontal">
-        <div class="form-group">
-            <label for="inputCmd" class="col-sm-2 control-label">命令</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputCmd" placeholder="命令">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="inputTopic" class="col-sm-2 control-label">密码</label>
-            <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputTopic" placeholder="密码">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <input type="button" id="btnSubmit" class="btn btn-default" value="执行">
-                <span id="spanInfo" class="error-info"></span>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="div_msg" class="col-sm-2 control-label"></label>
-            <div class="col-sm-10">
-                <div class="well" id="div_msg">
-                    <p># 执行结果</p>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/jobhub.css&quot;&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/lib/yunba/socket.io-1.3.5.min.js&quot;&gt;&lt;/script&gt;
-&lt;script type
-    
-    </summary>
-    
-      <category term="Tech-JavaScript" scheme="www.iceblue.top/categories/Tech-JavaScript/"/>
-    
-    
-      <category term="即时通讯" scheme="www.iceblue.top/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS Subscribe</title>
-    <link href="www.iceblue.top/2017/03/24/YunbaSubscribe/"/>
-    <id>www.iceblue.top/2017/03/24/YunbaSubscribe/</id>
-    <published>2017-03-24T10:27:02.000Z</published>
-    <updated>2017-03-25T17:11:30.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Tech-JavaScript" scheme="www.iceblue.top/categories/Tech-JavaScript/"/>
-    
-    
-      <category term="即时通讯" scheme="www.iceblue.top/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/"/>
-    
-  </entry>
   
   <entry>
     <title>Go all the way</title>
